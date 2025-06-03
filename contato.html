@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Barbearia do escalibur-ducorte</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="logo.png"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="produtos.html">PRODUTOS</a></li>
+                    <li><a href="contato.html">CONTATOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <label>Nome e sobrenome<input type="text" class="input-padrao" required></label>
+            <label>Email<input type=”email” class="input-padrao" required placeholder="seuemail@dominio"></label>
+            <label>Telefone<input type=”tel” class="input-padrao" required placeholder="(XX) XXXXX-XXXX"></label>
+
+            <label for="mensagem">Digite sua mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+            <fieldset>
+                <label>Como prefere o nosso contato:</label>
+                <label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email">
+                    E-mail</label>
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
+                        id="radio-telefone">Telefone</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+                        checked>WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Em que horário voce prefere que entremos em contato</label>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label><input type="checkbox" class="checkbox" checked>Gostaria de receber nossa novidades por
+                e-mail?</label>
+
+            <input class="enviar" type="submit" value="Enviar formulário">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Segunda</th>
+                        <th>8h ~ 20h</th>
+                    </tr>
+                    <tr>
+                        <th>Quarta</th>
+                        <th>8h ~ 20h</th>
+                    </tr>
+                    <tr>
+                        <th>Sexta</th>
+                        <th>8h ~ 20h</th>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </main>
+    <footer>
+        <img src="logo-branco.png" />
+        <p class="copyright">&copy; Copyright Barbearia do escalibur-ducorte - 2025</p>
+    </footer>
+</body>
+
+</html>
